@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10_연습문제</title>
+</head>
+<body>
+    <hr> <!--------------------연습문제1------------------------------->
+<h1>피자</h1>
+고객명: <input type="text" > <br>
+전화번호: <input type="tel"> <br>
+E-mail: <input type="email"><br>
+
+
+  피자선택:
+  <select >
+    <option >피자 선택해주세요</option>
+    <option >불고기피자</option>
+    <option >고구마피자</option>
+    <option >감자피자</option>
+    <option >쉬림프피자(500+)</option>
+  </select>
+
+  <fieldset>
+    <legend>피자사이즈</legend>
+
+    <input type="radio"> Small  <br>
+    <input type="radio"> Medium <br>
+    <input type="radio"> Large  <br>
+  </fieldset>
+
+  <fieldset>
+    <legend>토핑 선택</legend>
+
+    <input type="checkbox"> 베이컨 <br>
+    <input type="checkbox"> 치즈  <br>
+    <input type="checkbox"> 양파 <br>
+    <input type="checkbox"> 버섯 <br>
+
+  </fieldset>
+
+  희망배송시간: <input type="time"> <br> <br>
+
+  배송시 요청사항: <textarea name="" id=""></textarea><br> <br>
+
+  <button>주문하기</button>
+
+
+  <hr> <!--------------------연습문제2------------------------------->
+<h1>납품</h1>
+  <fieldset>
+    <legend>납품자 정보</legend>
+    <ol type="1">
+    <li>
+      납품자명:<input type="text">
+    </li> 
+    <br>
+    <li>
+      email:<input type="email" placeholder="answer@naver.com">
+    </li>
+    <br>
+    <li>
+      홈페이지: <input type="url" value="http://" >
+    </li>
+    <br>
+    <li>
+      지역: <select name="" id="">
+          <option>서울</option>
+          <option>경기</option>
+          <option>인천</option>
+          <option selected>부산</option>
+    </select>
+  </li>
+    </ol>
+  </fieldset>
+
+  <fieldset>
+    <legend>납품 정보</legend>
+    <ul>
+      <li>
+        상품명 : <input type="text">
+      </li> <br>
+
+      <li>
+        납품수량: <input type="text" placeholder="최소100" min="100">
+      </li> <br>
+
+      <li>
+        납품등급: <input type="range">
+      </li> <br>
+
+      <li>
+        기타사항: <textarea name="" id=""></textarea>
+      </li> <br>
+    </ul>
+  </fieldset>
+
+<!--------------------------3번 문제-------------------------------->
+<hr>
+<h1>회원 가입</h1>
+
+<fieldset>
+  <legend>필수 입력 정보</legend>
+<table >
+  <tr>
+    <th >id</th>
+    <td><input type="text" placeholder="아이디 10글자 이내">  
+         <button>중복확인</button>
+    </td>
+  </tr>
+
+ <tr>
+  <th>비밀번호</th>
+  <td><input type="text" 
+      size="30"
+      placeholder="영문,숫자,특수문자 포함 8자 이상">  
+   </td>
+</tr> 
+
+ <tr>
+  <th>비밀번호 확인</th>
+  <td><input type="text" size="30" ></td>
+</tr> 
+
+ <tr>
+  <th>Email</th>
+  <td>
+    <input type="email">
+    <select  >
+      <option>직접입력</option>
+      <option>@naver.com</option>
+      <option>@gmail.cpm</option>
+    </select>
+  </td>
+</tr>
+</table>
+
+<fieldset>
+  <legend>추가 정보</legend>
+  프로필 사진 <button>파일 선택</button>선택된 파일 없음 <br><br>
+
+  성별: 
+  남자 <input type="radio" name="gender" id="male">
+  여자 <input type="radio" name="gender" id="female">
+  
+  <br><br>
+  생년월일 : <input type="date">
+  <br><br>
+  취미
+  <br>
+  <input type="checkbox"> 야구
+  <input type="checkbox"> 농구
+  <input type="checkbox"> 축구
+  <br>
+  <input type="checkbox"> 공부
+  <input type="checkbox"> 음악감상    
+  <br>
+  <input type="checkbox"> 기타
+  <input type="text">
+  <br><br>
+  
+  자기소개 <br>
+  <textarea style="resize: none" rows="10"cols="70"></textarea>
+</fieldset>
+
+<br>
+<button>회원가입</button>
+<button>다시입력</button>
+<button>이전으로</button>
+
+
+
+</fieldset>
+
+
+
+</body>
+</html>
