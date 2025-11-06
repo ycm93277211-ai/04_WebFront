@@ -1,0 +1,38 @@
+
+
+/* 1순위 :!important */
+/* !important 넣어주면 됨 */
+div {
+  width: 200px;
+  height: 200px;
+  background-color: red !important;
+}
+
+/* 2순위 :  lnilne-style 속성 */
+/* HTML 요소에 직접 넣어야함 */
+
+/* 3순위 : 아이디선택자 */
+#test1 { 
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+
+
+/* 4순위 : 클래스선택자 */
+/* 동일한 우선순위에서는 아래쪽에 작성된
+설정값이 우선 적용됨 */
+.cls1 {
+  background-color: aqua;
+}
+.cls1 {
+  background-color: yellow;
+}
+
+
+/* 5순위 : 태그선택자 */
+div {
+  width: 200px;
+  height: 200px;
+  background-color: red ;
+}

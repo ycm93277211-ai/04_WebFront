@@ -1,0 +1,113 @@
+.area1 {background-color: red;}
+.area2 {background-color: orange;}
+.area3 {background-color: yellow;}
+.area4 {background-color: green;}
+.area5 {background-color: blue;}
+
+/* 강제로 인라인형태로 만들기 */
+.inline {
+  display: inline;
+}
+
+/* 강제로 블록형태 만들기 */
+.block {
+  display: block;
+
+  width: 150px;
+  height: 150px;
+}
+/* 인라인 한 줄로 쓰기,블럭의 크기 조절 */
+.inline-block {
+  display: inline-block;
+}
+
+/* -----------------------상하 2분할------------------ */
+
+
+  /*  감싸는 영역 요소 */
+#container-1 {
+  border: 3px solid black;
+  width: 323px;
+  height: 472px;
+}
+/* 내부에 영역을 분할할 요소 */
+#container-1 > div {
+  border: 1px dashed hotpink;
+  height: 50%;
+}
+
+#container-1 > div:first-child {
+  background-color: red;
+  height: 30%;
+}
+
+#container-1 > div:last-child {
+  background-color: blue;
+  height: 70%
+}
+/* -----------------------상하 3분할------------------ */
+
+/* block 형식의 요소는 별도의 width가 지정되지 않으면
+  부모의 100%를 차지함 */
+#container-2 {
+  border: 3px solid black;
+  height: 400px;
+  width: 500px;
+}
+
+#container-2 > .div-2:nth-of-type(1){
+  height: 20%;
+  background-color: yellow;
+}
+
+#container-2 > .div-2:nth-of-type(2) {
+  height: 30%;
+  background-color: green;
+}
+
+#container-2 > .div-2:nth-of-type(3){
+  height: 50%;
+  background-color: gold;
+}
+
+/* -----------------------좌우 2분할------------------ */
+
+#container-3 {
+  border: 5px solid red;
+  width: 400px;
+  height: 200px;
+}
+
+.div-3 { 
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+#container-3 >.div-3:nth-of-type(1){
+  background-color: pink;
+}
+#container-3 >.div-3:nth-of-type(2){
+  background-color: steelblue;
+}
+
+/* ---------------------------display : none , visibility----------------------- */
+.div-4 {
+  border: 3px solid black;
+  height: 100px;
+}
+
+#test4 {
+  background-color: deeppink;
+  /* display: none; 화면상 출력이 안 보임 */
+   visibility: hidden; /* 출력되는데 투명임 */
+}
+
+
+
+
+
+
+
+
+
