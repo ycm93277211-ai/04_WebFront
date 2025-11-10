@@ -1,0 +1,304 @@
+
+main{
+  flex-direction: column;
+  display: flex;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  /* border: 2px  solid black; */
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  
+  
+}
+
+header > section:nth-child(1){
+ position: relative;
+ bottom: 6px;
+ margin: 0%;
+}
+header > section:nth-child(2){
+  flex-basis: 40%;
+  display: flex;
+  position: relative;
+  bottom: 5px;
+
+}
+header > section:nth-child(3){
+  flex-basis: 20%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  position: relative;
+  bottom: 5px;
+  margin: 0;
+}
+section {
+  display: flex;
+}
+
+header > section:nth-child(1) > a:first-child{
+  position: relative;
+  top: 5px;
+}
+
+
+#input {
+  flex-basis: 70%;
+  padding: 5px;  
+  font-size: 18px;
+  font-weight: 300px;
+  border-radius: 15px 0 0 15px;
+  border: 1px solid #ddd;
+  
+
+}
+#search-btn{
+  flex-basis: 10%;
+  border-radius: 0 15px 15px 0;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+section:nth-child(3){
+  display: flex;
+}
+
+section:nth-child(3)> a:last-child {
+  padding: 0 20px;
+  position: relative;
+  top: 0px;
+}
+
+section:nth-child(3) > button {
+  flex-basis: 25%;
+  border-radius: 30px;
+  border: none;
+  height: 30px;
+  position: relative;
+  top:5px;
+}
+ /* ------------------------------------------ 머리 부분-------------------- */
+
+#body > section:first-child{
+  /* border: 2px  solid black; */
+  display: flex;
+  width: 1450px;
+  height: 1450px;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+
+}
+
+#video{
+  width: 1250px;
+  height: 750px;
+  
+}
+#name{
+  font-size: 22px;
+  margin:0%;
+  position: relative;
+  right: 580px;
+}
+  
+#profile{
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 280px;
+  top: 8px;
+  gap: 10px;
+}
+
+#box {
+  width: 40px;
+  height:40px;
+  border-radius: 100%;
+}
+#name2{
+  position: relative;
+  bottom: 10px;
+
+}
+
+#profile > pre{
+   position: relative;
+   right: 68px;
+   top: 10px;
+   font-size: 11px;
+}
+/* 버튼 */
+
+#button {
+  position: relative;
+  left: 560px;
+  
+}
+
+#button > button:nth-child(1){
+  width: 70px;
+  height: 30px;
+  border: 0px solid #ddd;
+  border-radius: 15px 0 0 15px;
+
+}
+#button > button:nth-child(2){
+ width: 50px;
+ height: 30px;
+ border: 0px solid #ddd;
+ border-radius: 0 15px 15px 0;
+
+ position: relative;
+ right: 4px;
+}
+#button > button:nth-child(3){
+ width: 70px;
+ height: 30px;
+ border-radius: 15px;
+  border: 0px solid #ddd;
+}
+#button > button:nth-child(4){
+ width: 120px;
+ height: 30px;
+border-radius: 15px;
+ border: 0px solid #ddd;
+}
+#button > button:nth-child(5){
+ width: 100px;
+ height: 30px;
+  border-radius: 15px;
+ border: 0px solid #ddd;
+}
+#button > button:nth-child(6){
+ width: 50px;
+ height: 30px;
+  border-radius: 15px;
+ border: 0px solid #ddd;
+}
+
+/* --------------------밑----------------- */
+
+#footer { 
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  background-color: rgb(243, 241, 241);
+  flex-basis: 60%;
+  width: 1250px;
+  height: 700px;
+  margin: 20px;
+  border-radius: 15px;
+  
+}
+
+#blue {
+  text-decoration: none !important;
+  color: blue;
+}
+
+
+
+#footer > div {
+  flex-basis: 20%;
+  display: flex;
+}
+
+#footer > button {
+  border-radius: 20px;
+  width: 120px;
+  height:70px;
+  color: blue;
+  border: 2px solid #ddd;
+  position: relative;
+  left: 10px;
+}
+
+
+
+
+
+#box3 {
+  width: 40px;
+  height:40px;
+  border-radius: 100%;
+  position: relative;
+  top: 5px;
+}
+#name3{
+  position: relative;
+  left: 5px;
+  bottom: 10px;
+
+}
+#footer > div >pre{
+    position: relative;
+    top: 15px;
+    right: 50px;
+
+}
+
+
+
+
+
+
+
+
+#insbut >button:nth-child(1){
+   width: 80px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  margin: 4px;
+}
+
+#insbut >button:nth-child(2){
+   width: 80px;
+ height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    margin: 4px;
+}
+#insbut >button:nth-child(3){
+   width: 80px;
+  height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    margin: 4px;
+}
+#insbut >button:nth-child(4){
+   width: 80px;
+ height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    margin: 4px;
+}
+#insbut >button:nth-child(5){
+   width: 80px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  margin: 4px;
+}
+#insbut >button:nth-child(6){
+   width: 80px;
+   height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    margin: 4px;
+}
+
+
+
+/* 옆 영상들 */
+#svideo {
+  display: flex;
+  flex-direction: column;
+}
+

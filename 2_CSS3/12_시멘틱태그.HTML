@@ -71,7 +71,7 @@
         <!-- form 내부 input 태그값을 서버로 제출/전달 -->
         <form action="#" name="search-form">
           <fieldset> 
-            <!-- fieldset : form 내부에서 input을 종륩별로 묶는 용도로 자주 사용 -->
+            <!-- fieldset : form 내부에서 input을 종류별로 묶는 용도로 자주 사용 -->
              <!--autocomplete="off": HTML 기본 자동완성 사용 x  -->
             <input type="search" id="query" name="query" 
             placeholder="검색어를 입력해주세요." autocomplete="off" >
@@ -129,13 +129,58 @@
     </section>
 
     <!-- 아이디 비번 로그인 영역 -->
-    <section class="content-2"></section>
+    <section class="content-2">
+      <form action="#" name="login-form">
+
+        <fieldset id="id-pw-area">
+            <section>
+              <input type="text" name="inputId" placeholder="아이디">
+              <input type="password" name="inputPw" placeholder="비밀번호">
+            </section>
+
+           <section>
+             <button type="submit">로그인</button>
+           </section>
+        </fieldset>
+
+        <label for="">
+          <input type="checkbox" name="saveId">
+          아이디 저장
+        </label>
+      </form>
+
+      <!-- 회원가입 /ID/PW 찾기 영역 -->
+      <section id="signup-find-area">
+        <a href="#">회원가입</a>
+        <span>|</span>
+        <a href="#">ID/PW 찾기</a>
+
+      </section>
+
+
+
+    </section>
 
   </section>
 
 
 </main>
 
-<footer></footer>
+<footer>
+<p>Copyright &copy; KH Information Educationl Institute E-Class</p>
+
+<section>
+  <a href="#">프로젝트 소개</a>
+  <span>|</span>
+  <a href="#">이용약관</a>
+  <span>|</span>
+  <a href="#">개인정보 처리 방침</a>
+  <span>|</span>
+  <a href="#">고객센터</a>
+  
+</section>
+
+</footer>
+
 </body>
 </html>
