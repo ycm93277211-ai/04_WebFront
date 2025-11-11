@@ -5,25 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>자기소개서</title>
   <link rel="stylesheet" href="./자기소개.css">
+
+  <style>
+    @font-face {
+    font-family: 'NamyangjuGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2510-2@1.0/NYJGothicEB.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+ *{
+    font-family: 'NamyangjuGothic';
+  }
+  </style>
 </head>
 <body>
 
   <main>
     
-    <!-- 1장 -->
+    <!-- 목록 -->
     <section id="menu">
       <div>
           <a href="#">
-            <img src="/images/개발자 이미지.jfif" alt="" id="스폰지밥">
+            <img src="/images/스폰지밥이미지.jpg" alt="" id="스폰지밥">
           </a>
 
           <div>
             <h3>목록</h3>
             <nav>
               <ul id="list">
-                <li><a href="">자기소개</a></li>
-                <li><a href="">경력</a></li>
-                <li><a href="">Contact Me</a></li>
+                <li><a href="#profile">자기소개</a></li>
+                <li><a href="#career">경력</a></li>
+                <li><a href="#Contact">Contact Me</a></li>
               </ul>
             </nav>
   
@@ -34,10 +47,10 @@
 
 
 
-    <!-- 2장 -->
+    <!-- 자기소개서 -->
     <section id="profile">
       <!-- 위 -->
-      <div>
+      <div class="위">
         <!-- 사진 -->
         <div>
           <a href="#">
@@ -45,7 +58,16 @@
           </a>
         </div>
         <!-- 프로필 내용 -->
-        <div></div>
+        <div>
+          <h1>양충모</h1> <p>YANG CHUNG MO</p>
+<pre>
+생년월일:20040429                     연락처:010-1234-5678
+
+이메일:kh_040429@naver.com
+
+주소:인천광역시 남동구 논현동  
+</pre>
+        </div>
 
       </div>
 
@@ -54,19 +76,91 @@
 
 
       <!-- 아래 -->
-      <div></div>
+      <div class="아래">
+        <ul>
+          <li>
+저는 Java 기반의 백엔드 개발에 관심을 가지고 있으며,
+학습 과정에서 Java, JDBC, SQL, HTML/CSS 등을 활용해
+여러 프로젝트를 <br> 구현했습니다.
+          </li><br>
+          <li>
+특히 JDBC를 이용한 DB 연동 프로그램 개발을 통해
+SQL 쿼리 작성, 예외 처리, Connection 관리, DAO 패턴 등을  익혔습니다.
+          </li><br>
+          <li>
+또한 HTML/CSS를 활용해 간단한 웹 페이지를 만들며
+기본 구조를 익혔고 HTML/CSS의 흐름을 이해하기 위해 노력했습니다.</li><br>
+          <li>          
+이 과정에서 <br><br>
+문제 원인을 직접 찾아 해결하는 능력! <br><br>
+개발 흐름을 구조적으로 이해하는 능력! <br><br>
+을 키웠고, 이는 개발자로 성장하는 데 큰 기반이 되었습니다.</li>
+        </ul>
+      </div>
 
     </section>
 
 
+    <!-- 경력 -->
+    <section id="career">
+    
+    <h1>학력</h1>
+
+    <table>
+    <tr>
+      <ul>
+        <li> 2017~2020년 고등학교 졸업 / 전공 : 컴퓨터 공학과</li>
+        <li> 2020~2027년 대학교   졸업 / 전공 : 컴퓨터 공학과</li>
+      </ul>
+    </tr>
+  </table>
+    <h1>경력</h1>
+    <table>
+      <tr>
+        <ul>
+          <li>KH정보기술원 과정 수료</li>
+          <li>미니프로젝트 </li>
+          <li>파이널프로젝트</li>
+        </ul>
+      </tr>
+    </table>
+    
+    <h1>스킬</h1>
+    <tr>
+       <ul>
+          <li> Java, Javascript, DB, JDBC, HTML, CSS </li>
+        </ul>
+    </tr>
+    <a href="">
+      <img src="/images/개발 이미지.png" alt="" id="develop">
+    </a>
+
+    </section>
+<!-- Contact Me -->
+    <footer id="Contact">
+
+      <h2>Contact Me</h2>
+      <form>
+        이름: <input type="text" id="name" name="name" placeholder="이름을 입력해주세요"> <br>
+        이메일: <input type="email" id="email" name="email" placeholder="이메일을 입력해주세요"><br>
+        연락처: <input type="text" id="phone" name="phone" placeholder="연락처를 입력해주세요"><br>
+        <button>제출</button>
+      </form>
+
+
+
+    </footer>
 
 
 
 
-    <div></div>
-    <div></div>
 
-    <a href="list">목록으로 이동</a>
+
+
+
+
+
+    <a href="#list">목록으로 이동</a>
   </main>
 
 

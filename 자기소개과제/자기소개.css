@@ -6,6 +6,14 @@ main{
   flex-direction: column;
 }
 
+button {
+  background-color: chocolate;
+  border: none;
+}
+h1, h2, h3 {
+  color: #1e90ff; 
+}
+
 
 /* 한 페이지 */
 #menu{
@@ -18,16 +26,15 @@ main{
   flex-basis: 25%;
   border: 2px solid black;
   display: flex;
+  flex-direction: column;
+
 }
-div:nth-child(3){
+#career{
   flex-basis: 25%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
-}
-div:nth-child(4){
-  flex-basis: 25%;
-  border: 2px solid black;
-  display: flex;
+  flex-direction: column;
+
 }
 
 
@@ -52,9 +59,106 @@ div:nth-child(4){
 #list{
   font-size: 60px;
 }
+#list a{
+  color: lightcoral;
+  text-decoration: none;
+}
 
 
 
 /* 2장------------- */
+.위{
+  display: flex;
+  width: 1800px;
+  height: 500px
+}
+.위 > div:nth-child(1) {
+    /* background-color: aqua; */
+   /* border: 1px solid black; */
+  flex-basis: 20%;
+
+}
+.위 > div:nth-child(2) {
+  /* background-color: aqua; */
+  /* border: 1px solid black; */
+  flex-basis: 80%;
+  font-size: 40px;
+
+}
+
+#시바견 {
+  border-radius: 50%;
+  width: 480px;
+  height: 480px;
+  margin: 15px;
+
+}
+.위  pre ,.위 h1{
+  position: relative;
+  left: 60px;
+}
+.위  pre {
+  position: relative;
+
+  bottom: 100px;
+}
+.위 p {
+  color: lightcoral;
+  position: relative;
+  left: 400px;
+  bottom: 120px;
+}
+
+#profile >div:last-child{
+flex-basis: 50%;
+}
+
+.아래 li{
+  font-size: 30px;
+  position: relative;
+  top: 30px;
+  left: 20px;
+
+}
 
 
+/* ---------------------- */
+
+#career h1 ,#career h3{
+font-size: 60px;
+position: relative;
+bottom: 10px;
+left: 20px;
+
+}
+#career ul {
+font-size: 30px;
+position: relative;
+bottom: 50px;
+left: 20px;
+
+}
+
+/* ------------------------- */
+
+#Contact {
+  background-color: #ddd;
+}
+#Contact > h2 {
+  font-size: 60px;
+  position: relative;
+  left: 20px;
+  bottom: 30px;
+}
+#Contact > form {
+  font-size: 30px;
+  position: relative;
+  left: 20px;
+  bottom: 30px;
+}
+#name,#email,#phone {
+  width: 300px;
+  height: 30px;
+  border: 0;
+
+}
