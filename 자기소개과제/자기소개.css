@@ -1,0 +1,60 @@
+main{
+  border: 2px solid black;
+  display: flex;
+  width: 1800px;
+  height: 3800px;
+  flex-direction: column;
+}
+
+
+/* 한 페이지 */
+#menu{
+  flex-basis: 25%;
+  border: 2px solid black;
+  display: flex;
+
+}
+#profile{
+  flex-basis: 25%;
+  border: 2px solid black;
+  display: flex;
+}
+div:nth-child(3){
+  flex-basis: 25%;
+  border: 2px solid black;
+  display: flex;
+}
+div:nth-child(4){
+  flex-basis: 25%;
+  border: 2px solid black;
+  display: flex;
+}
+
+
+/* 1장------------- */
+
+#menu > div:nth-child(1) {
+  display: flex;
+  width: 100%;    
+  height: 100%;
+
+}
+#스폰지밥 {
+  width: 100%;  
+  height: 100%;  
+
+}
+
+#menu h3{
+  font-size: 100px;
+}
+
+#list{
+  font-size: 60px;
+}
+
+
+
+/* 2장------------- */
+
+
