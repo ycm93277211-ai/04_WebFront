@@ -139,6 +139,10 @@ left: 20px;
 
 }
 
+#career tr {
+  border: 1px solid black;
+}
+
 /* ------------------------- */
 
 #Contact {
