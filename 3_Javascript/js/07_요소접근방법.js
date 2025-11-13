@@ -95,8 +95,54 @@ function cssTest() {
 
 }
 
+// 카카오톡----------------------------------------------
 
+function readValue(){
 
+  // 채팅이 출력되는 배경 요소
+  // const bg = document.getElementById(chatting-bg); // 두개 가능
+  const bg = document.querySelector("#chatting-bg");
+  
+  // 채팅 내용 일력 input요소
+  const input = document.querySelector("#user-input");
+
+  // 입력된 값이 없을 경우
+  // 1) 진짜 안적음
+  // 2) 공백만 적음
+  // 문자열.trim() : 문자열 좌우 공백 제거
+  if(input.value.trim().length == 0){
+    alert("채팅 내용을 입력해주세요");
+    input.value=" "; // 이전 작성된 값 제거
+    input.focus(); // input에 커서 활성화
+    return;
+  }
+
+  bg.innerHTML += `<p><span>${input.value}<span><p>`;
+
+  // bg.scrollTop : 현재 스크롤 위치
+  // 스크롤이 현재 얼마만큼 내려와있는지 나타냄
+
+  // bg.scrollHeight : bg의 스크롤 전체 높이
+  // 스크롤바를 이용해 스크롤 할  수 있는 전체 높이
+  console.log(bg.scrollTop);
+  console.log(bg.scrollHeight);
+
+  bg.scrollTop = bg.scrollHeight; // scrollHeight의 높이 만큼 아래쪽으로 따라옴
+  input.value=" ";
+  input.focus();
+
+}
+
+// keydown : 키가 눌러졌을 때(+ 꾹 누르고 있으면 계속 인식됨)
+// keyup :눌려지던 키가 떼어졌을 떄 (올라왔을 때, 1회만 인식됨)
+document.querySelector("#user-input").addEventListener("keyup",function(e){
+  // 매개변수 e : 이벤트 객체(발생한 이벤트 정보를 담고있는객체)
+  console.log(e);
+
+  if(e.key == "Enter"){  // 엔터가 눌려지고 떼어졌을때
+    readValue();
+  }
+});
 
 
 
