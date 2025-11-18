@@ -103,7 +103,7 @@ test2.addEventListener("click",function(){
 const box3 = document.querySelector("#box3");
 const input3 = document.querySelector("#input3");
 
-
+// 익명함수의 e 는 이벤트(키보드 화면 등..) 상황을 담은 상자
 input3.addEventListener("keyup",function(e){
 
   if(e.key == "Enter"){

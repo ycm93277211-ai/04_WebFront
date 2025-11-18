@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js로 요소를 만드시오</title>
+
+    <style>
+      #position{
+        justify-content: center;
+      }
+
+    </style>
+
+</head>
+<body>
+
+  <h1>js로 요소 만들기! 시험 대비</h1>
+
+  <div id="contain" style="display: flex; flex-direction: column;">
+    <div>
+      너비: <input type="text" id="width">
+      높이: <input type="text" id="height">
+      <br>
+      색상: <input type="text" id="color">
+      위치: <input type="text" id="position">
+      <button id="button">적용</button>
+    </div>
+    <br>
+    <textarea name="textarea" 
+    style="width: 300px; height: 300px;" 
+    id="textarea"></textarea>
+    
+  </div>
+
+  <script>
+  const width = document.getElementById("width");
+  const height = document.getElementById("height");
+  const color = document.getElementById("color");
+  const textarea = document.getElementById("textarea");
+  const position = document.getElementById("position");
+  
+
+
+  document.getElementById("button").addEventListener("click", ()=>{
+
+    textarea.style.width = width.value + "px"; 
+    textarea.style.height = height.value + "px"; 
+    textarea.style.color = color.value; 
+    textarea.style. justifyContent = position.value; 
+
+
+  });
+
+
+  </script>
+  
+</body>
+</html>
